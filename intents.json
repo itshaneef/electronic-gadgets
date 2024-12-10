@@ -1,0 +1,191 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Hey", "How are you"],
+        "responses": ["Hello! How can I assist you with your gadget queries today?", "Hi there! What gadget information do you need?", "Hey! How can I help you today?"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye", "Take care"],
+        "responses": ["Goodbye! Take care and enjoy your gadgets!", "See you later! Keep exploring tech!", "Goodbye! Feel free to ask me more gadget-related questions anytime!"]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thank you", "Thanks", "Thanks a lot", "I appreciate it"],
+        "responses": ["You're welcome! Stay tech-savvy!", "No problem! Glad I could help!", "You're welcome! Let me know if you have more questions!"]
+      },
+      {
+        "tag": "about",
+        "patterns": ["What can you do", "Who are you", "What are you", "What is your purpose"],
+        "responses": ["I am an electronic gadget information chatbot here to provide details about various devices.", "My purpose is to assist you with information about gadgets and their features."]
+      },
+      {
+        "tag": "iphone_14",
+        "patterns": [
+          "Tell me about the iPhone 14",
+          "What are the features of iPhone 14?",
+          "What is the price of iPhone 14?",
+          "Is the iPhone 14 available?",
+          "Should I buy the iPhone 14?",
+          "Compare iPhone 14 with Samsung Galaxy S23",
+          "Does iPhone 14 support 5G?",
+          "What colors does the iPhone 14 come in?",
+          "How is the battery life of iPhone 14?",
+          "Can I use iPhone 14 for gaming?",
+          "Is the iPhone 14 waterproof?",
+          "Are there any discounts on iPhone 14?",
+          "What is the camera quality of iPhone 14?",
+          "Does iPhone 14 have wireless charging?",
+          "How much storage does iPhone 14 have?",
+          "Is the iPhone 14 compatible with Apple Watch Series 9?",
+          "What is the release date of iPhone 14?",
+          "Are there any trade-in offers for iPhone 14?"
+        ],
+        "responses": [
+          "The iPhone 14 features a sleek design, A15 Bionic chip, and excellent camera quality.",
+          "The iPhone 14 starts at $799, depending on the storage variant.",
+          "Yes, the iPhone 14 is available at Apple stores and online retailers.",
+          "The iPhone 14 is a great choice for photography enthusiasts and Apple ecosystem users.",
+          "Here is a comparison of iPhone 14 and Samsung Galaxy S23. What specific features would you like to compare?",
+          "Yes, the iPhone 14 supports 5G connectivity for faster internet speeds.",
+          "The iPhone 14 is available in Midnight, Starlight, Blue, Purple, and Product(RED).",
+          "The iPhone 14 offers an all-day battery life, suitable for moderate to heavy usage.",
+          "Yes, the iPhone 14 is excellent for gaming with its A15 Bionic chip.",
+          "The iPhone 14 has an IP68 rating, making it resistant to water and dust."
+        ]
+      },
+      {
+        "tag": "macbook_pro",
+        "patterns": [
+          "Tell me about the MacBook Pro",
+          "What are the specifications of MacBook Pro?",
+          "What is the price of MacBook Pro?",
+          "Is the MacBook Pro available?",
+          "Should I buy the MacBook Pro?",
+          "Does MacBook Pro have an M2 chip?",
+          "How much RAM does MacBook Pro have?",
+          "What is the battery life of MacBook Pro?",
+          "Can I use MacBook Pro for video editing?",
+          "Is the MacBook Pro good for developers?",
+          "What is the screen size of MacBook Pro?",
+          "Is the MacBook Pro better than Dell XPS 13?",
+          "Does MacBook Pro have a touchscreen?",
+          "What ports does the MacBook Pro have?",
+          "Is the MacBook Pro lightweight?",
+          "What colors does the MacBook Pro come in?",
+          "Does the MacBook Pro support macOS Ventura?"
+        ],
+        "responses": [
+          "The MacBook Pro is a powerful laptop designed for professionals, featuring the latest Apple Silicon chips.",
+          "The price of MacBook Pro varies from $1,299 to $2,499 depending on the model and specifications.",
+          "Yes, the MacBook Pro is available on the Apple Store and other authorized retailers.",
+          "The MacBook Pro is highly recommended for content creators and professionals.",
+          "Yes, the MacBook Pro comes with the M2 chip in the latest models for unparalleled performance.",
+          "The MacBook Pro supports up to 64GB of unified RAM in its top configurations."
+        ]
+      },
+      {
+        "tag": "dell_xps_13",
+        "patterns": [
+          "What are the features of Dell XPS 13?",
+          "Is the Dell XPS 13 a good laptop?",
+          "What is the price of Dell XPS 13?",
+          "Does Dell XPS 13 have a touchscreen?",
+          "How is the battery life of Dell XPS 13?",
+          "Can I use Dell XPS 13 for gaming?",
+          "Is the Dell XPS 13 lightweight?",
+          "How does Dell XPS 13 compare with MacBook Pro?",
+          "Does Dell XPS 13 have an OLED display?",
+          "What is the processor in Dell XPS 13?",
+          "Does Dell XPS 13 support Windows 11?",
+          "Is Dell XPS 13 suitable for students?",
+          "Does Dell XPS 13 have Thunderbolt ports?"
+        ],
+        "responses": [
+          "The Dell XPS 13 is a premium ultrabook known for its sleek design and powerful performance.",
+          "The Dell XPS 13 starts at $999, depending on the configuration.",
+          "Yes, the Dell XPS 13 has a touchscreen option available in certain models.",
+          "The Dell XPS 13 offers up to 14 hours of battery life, depending on usage."
+        ]
+      },
+      {
+        "tag": "samsung_galaxy_s23",
+        "patterns": [
+          "What are the specifications of Samsung Galaxy S23?",
+          "How much does Samsung Galaxy S23 cost?",
+          "Does Samsung Galaxy S23 support 5G?",
+          "What is the camera quality of Samsung Galaxy S23?",
+          "Does Samsung Galaxy S23 have wireless charging?",
+          "Is the Samsung Galaxy S23 waterproof?",
+          "How does Samsung Galaxy S23 compare to iPhone 14?",
+          "What colors does Samsung Galaxy S23 come in?",
+          "Does Samsung Galaxy S23 have a good battery life?",
+          "Can I use Samsung Galaxy S23 for gaming?"
+        ],
+        "responses": [
+          "The Samsung Galaxy S23 is a flagship smartphone featuring Snapdragon 8 Gen 2 processor and a 50MP triple-camera setup.",
+          "The Samsung Galaxy S23 starts at $799.",
+          "Yes, the Samsung Galaxy S23 supports 5G connectivity.",
+          "The Samsung Galaxy S23 offers vibrant color options like Phantom Black, Green, and Lavender.",
+          "The Galaxy S23 has an IP68 rating, making it waterproof and dustproof."
+        ]
+      },
+      {
+        "tag": "sony_playstation_5",
+        "patterns": [
+          "What are the features of Sony PlayStation 5?",
+          "How much does the PlayStation 5 cost?",
+          "Is the PlayStation 5 available?",
+          "Can I play PS4 games on PlayStation 5?",
+          "What is the storage capacity of PlayStation 5?",
+          "Does PlayStation 5 support 8K gaming?",
+          "Is the PlayStation 5 good for VR gaming?",
+          "Does PlayStation 5 have a digital-only version?",
+          "What games are available on PlayStation 5?"
+        ],
+        "responses": [
+          "The Sony PlayStation 5 is a next-gen gaming console with ray tracing, 4K graphics, and a DualSense controller.",
+          "The PlayStation 5 is priced at $499 for the standard version and $399 for the digital-only version.",
+          "Yes, the PlayStation 5 is backward compatible with most PS4 games."
+        ]
+      },
+      {
+        "tag": "lg_oled_tv",
+        "patterns": [
+          "What are the features of LG OLED TV?",
+          "How much does the LG OLED TV cost?",
+          "Is LG OLED TV good for gaming?",
+          "Does LG OLED TV support 4K HDR?",
+          "What sizes are available for LG OLED TV?",
+          "Does LG OLED TV have Dolby Vision?",
+          "What is the refresh rate of LG OLED TV?",
+          "Can LG OLED TV connect to Alexa or Google Assistant?",
+          "Does LG OLED TV have HDMI 2.1 ports?"
+        ],
+        "responses": [
+          "The LG OLED TV offers stunning visuals with perfect blacks, 4K HDR, and Dolby Vision support.",
+          "The LG OLED TV starts at $1,299, varying by size and model.",
+          "Yes, LG OLED TVs are excellent for gaming with low input lag and HDMI 2.1 support."
+        ]
+      },
+      {
+        "tag": "samsung_qled_tv",
+        "patterns": [
+          "What are the features of Samsung QLED TV?",
+          "Is Samsung QLED TV better than OLED?",
+          "How much does Samsung QLED TV cost?",
+          "Does Samsung QLED TV support 8K resolution?",
+          "What sizes are available for Samsung QLED TV?",
+          "Does Samsung QLED TV have Quantum Dot technology?",
+          "Can I use Samsung QLED TV for gaming?"
+        ],
+        "responses": [
+          "The Samsung QLED TV delivers vibrant colors, deep blacks, and supports 4K/8K resolution depending on the model.",
+          "Samsung QLED TVs typically start at $999, with higher prices for larger or 8K models.",
+          "Yes, Samsung QLED TVs are great for gaming with features like low latency and fast refresh rates."
+        ]
+      }
+    ]
+  }
+  
