@@ -20,9 +20,16 @@ nltk.data.path.append(nltk_data_path)
 # This will bypass SSL verification, which is necessary for some environments
 ssl._create_default_https_context = ssl._create_unverified_context
 
-# Download the 'punkt' tokenizer if not already present
-if not os.path.exists(os.path.join(nltk_data_path, 'tokenizers/punkt')):
-    nltk.download('punkt', download_dir=nltk_data_path)
+# Check if punkt is already downloaded; if not, download it
+def download_nltk_resources():
+    if not os.path.exists(os.path.join(nltk_data_path, 'tokenizers/punkt')):
+        st.write("Downloading NLTK resources...")
+        nltk.download('punkt', download_dir=nltk_data_path)
+        st.write("NLTK resources downloaded successfully!")
+
+# Add a button to trigger the download of resources
+if st.button("Download NLTK Resources"):
+    download_nltk_resources()
 
 # Load intents from a JSON file (electronic gadgets dataset)
 file_path = os.path.abspath("./gadgets_intents.json")
