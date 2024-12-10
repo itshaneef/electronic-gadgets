@@ -17,12 +17,12 @@ if not os.path.exists(nltk_data_path):
 # Add the custom directory to NLTK's data path
 nltk.data.path.append(nltk_data_path)
 
+# This will bypass SSL verification, which is necessary for some environments
+ssl._create_default_https_context = ssl._create_unverified_context
+
 # Download the 'punkt' tokenizer if not already present
 if not os.path.exists(os.path.join(nltk_data_path, 'tokenizers/punkt')):
     nltk.download('punkt', download_dir=nltk_data_path)
-
-# This will bypass SSL verification, which is necessary for some environments
-ssl._create_default_https_context = ssl._create_unverified_context
 
 # Load intents from a JSON file (electronic gadgets dataset)
 file_path = os.path.abspath("./gadgets_intents.json")
@@ -62,8 +62,7 @@ def main():
     choice = st.sidebar.selectbox("Menu", menu)
 
     if choice == "Home":
-        st.write("""
-Welcome to **GadgetBot**! I'm your tech-savvy chatbot with a head full of knowledge about all things electronic gadgets. Need some quick info about your favorite devices? Just ask away!
+        st.write("""Welcome to **GadgetBot**! I'm your tech-savvy chatbot with a head full of knowledge about all things electronic gadgets. Need some quick info about your favorite devices? Just ask away!
 
 I can help you with details like:
 
@@ -111,8 +110,7 @@ Just type the name of any gadget—phones, laptops, TVs, or anything else—and 
                 st.markdown("---")
 
     elif choice == "About":
-        st.write("""
-**GadgetBot** is a chatbot designed to provide quick and accurate information about a wide range of electronic gadgets, including:
+        st.write("""**GadgetBot** is a chatbot designed to provide quick and accurate information about a wide range of electronic gadgets, including:
 
 - Phones
 - Laptops
@@ -192,7 +190,6 @@ Please note that this bot provides basic information and is not a substitute for
 st.write("""
 This project aims to create a user-friendly, accessible chatbot that offers users relevant, accurate gadget-related information. The combination of NLP, Logistic Regression, and Streamlit allows for both efficient classification of intents and an interactive interface for user queries. The chatbot is a great starting point and can be extended further with additional data, more advanced NLP models, or deeper learning techniques.
 """)
-
 
 if __name__ == '__main__':
     main()
