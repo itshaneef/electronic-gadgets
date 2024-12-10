@@ -1,13 +1,21 @@
 import os
+import subprocess
+import sys
 import json
 import datetime
 import csv
-import nltk
 import ssl
 import streamlit as st
 import random
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
+
+# Check if nltk is installed, and if not, install it
+try:
+    import nltk
+except ImportError:
+    print("NLTK not found. Installing...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "nltk"])
 
 # Specify a custom path for NLTK data
 nltk_data_path = os.path.join(os.getcwd(), 'nltk_data')
@@ -17,19 +25,12 @@ if not os.path.exists(nltk_data_path):
 # Add the custom directory to NLTK's data path
 nltk.data.path.append(nltk_data_path)
 
+# Download the 'punkt' tokenizer if not already present
+if not os.path.exists(os.path.join(nltk_data_path, 'tokenizers/punkt')):
+    nltk.download('punkt', download_dir=nltk_data_path)
+
 # This will bypass SSL verification, which is necessary for some environments
 ssl._create_default_https_context = ssl._create_unverified_context
-
-# Check if punkt is already downloaded; if not, download it
-def download_nltk_resources():
-    if not os.path.exists(os.path.join(nltk_data_path, 'tokenizers/punkt')):
-        st.write("Downloading NLTK resources...")
-        nltk.download('punkt', download_dir=nltk_data_path)
-        st.write("NLTK resources downloaded successfully!")
-
-# Add a button to trigger the download of resources
-if st.button("Download NLTK Resources"):
-    download_nltk_resources()
 
 # Load intents from a JSON file (electronic gadgets dataset)
 file_path = os.path.abspath("./gadgets_intents.json")
@@ -69,16 +70,7 @@ def main():
     choice = st.sidebar.selectbox("Menu", menu)
 
     if choice == "Home":
-        st.write("""Welcome to **GadgetBot**! I'm your tech-savvy chatbot with a head full of knowledge about all things electronic gadgets. Need some quick info about your favorite devices? Just ask away!
-
-I can help you with details like:
-
-- **Features** – What's this gadget's specialty?
-- **Specifications** – What’s under the hood?
-- **Usage Tips** – How can you make the most of it?
-
-Just type the name of any gadget—phones, laptops, TVs, or anything else—and I’ll handle the rest! Let’s get your tech know-how up to speed! 🚀
-""")
+        st.write("""Welcome to **GadgetBot**! I'm your tech-savvy chatbot with a head full of knowledge about all things electronic gadgets. Need some quick info about your favorite devices? Just ask away!""")
 
         if not os.path.exists('chat_log.csv'):
             with open('chat_log.csv', 'w', newline='', encoding='utf-8') as csvfile:
@@ -89,7 +81,6 @@ Just type the name of any gadget—phones, laptops, TVs, or anything else—and 
         user_input = st.text_input("You:", key=f"user_input_{counter}")
 
         if user_input:
-
             user_input_str = str(user_input)
 
             response = chatbot(user_input)
@@ -117,86 +108,18 @@ Just type the name of any gadget—phones, laptops, TVs, or anything else—and 
                 st.markdown("---")
 
     elif choice == "About":
-        st.write("""**GadgetBot** is a chatbot designed to provide quick and accurate information about a wide range of electronic gadgets, including:
-
-- Phones
-- Laptops
-- TVs
-- Computers
-- Other tech gadgets
-
-### Features:
-- **Interactive Interface**: Built using Streamlit for a smooth user experience.
-- **Quick Responses**: Powered by NLP techniques and Logistic Regression.
-- **Customization**: Can be expanded with additional gadgets and datasets.
-
-### Use Cases:
-- Learn about a gadget's features and specifications.
-- Get tips on how to use your devices effectively.
-- Stay informed about the latest tech trends.
-
-Feel free to explore and learn about your favorite gadgets! 🚀
-        """)
+        st.write("""**GadgetBot** is a chatbot designed to provide quick and accurate information about a wide range of electronic gadgets.""")
 
 st.subheader("Dataset:")
 
-st.write("""
-The dataset consists of a collection of labeled intents and patterns related to different electronic gadgets. Each intent has predefined patterns (user queries) and corresponding responses.
-
-Here are some key intents and their examples:
-
-Greeting:
-
-Patterns: ["Hi", "Hello", "Hey", "How are you"]
-Responses: ["Hello! How can I assist you with your gadget queries today?", "Hi there! What gadget information do you need?", "Hey! How can I help you today?"]
-
-Goodbye:
-
-Patterns: ["Bye", "See you later", "Goodbye", "Take care"]
-Responses: ["Goodbye! Take care and enjoy your gadgets!", "See you later! Keep exploring tech!", "Goodbye! Feel free to ask me more gadget-related questions anytime!"]
-
-Thanks:
-
-Patterns: ["Thank you", "Thanks", "Thanks a lot", "I appreciate it"]
-Responses: ["You're welcome! Stay tech-savvy!", "No problem! Glad I could help!", "You're welcome! Let me know if you have more questions!"]
-
-About:
-
-Patterns: ["What can you do", "Who are you", "What are you", "What is your purpose"]
-Responses: ["I am a gadget information chatbot here to provide details about various electronic devices.", "My purpose is to assist you with information about gadgets and their features."]
-
-Gadget Information:
-
-For each gadget, such as iPhone 14, Dell XPS, LG OLED TV, and PlayStation 5, the chatbot identifies specific queries and provides detailed information on:
-- Features
-- Specifications
-- Usage tips
-""")
+st.write("""The dataset consists of a collection of labeled intents and patterns related to different electronic gadgets. Each intent has predefined patterns (user queries) and corresponding responses.""")
 
 st.subheader("Streamlit Chatbot Interface:")
 
-st.write("""
-The chatbot interface is built using Streamlit. The interface includes a text input box for users to input their queries and a chat window to display the chatbot's responses. The interface uses the trained model to generate responses based on user input.
-""")
+st.write("""The chatbot interface is built using Streamlit. The interface includes a text input box for users to input their queries and a chat window to display the chatbot's responses. The interface uses the trained model to generate responses based on user input.""")
 
 st.subheader("Conclusion:")
-st.write("""
-This GadgetBot is a simple chatbot designed to provide basic and relevant information about some of the most popular electronic gadgets. The following are some of the gadgets included in the bot's dataset:
-
-- iPhone 14
-- MacBook Pro
-- Dell XPS 13
-- Samsung Galaxy S23
-- Sony PlayStation 5
-- LG OLED TV
-- samsung_qled_tv 
-
-Please note that this bot provides basic information and is not a substitute for professional advice or detailed technical support.
-""")
-
-st.write("""
-This project aims to create a user-friendly, accessible chatbot that offers users relevant, accurate gadget-related information. The combination of NLP, Logistic Regression, and Streamlit allows for both efficient classification of intents and an interactive interface for user queries. The chatbot is a great starting point and can be extended further with additional data, more advanced NLP models, or deeper learning techniques.
-""")
+st.write("""This GadgetBot is a simple chatbot designed to provide basic and relevant information about some of the most popular electronic gadgets.""")
 
 if __name__ == '__main__':
     main()
