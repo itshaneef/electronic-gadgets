@@ -6,6 +6,7 @@ import nltk
 import ssl
 import streamlit as st
 import random
+import requests
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 
@@ -24,10 +25,13 @@ if not os.path.exists(os.path.join(nltk_data_path, 'tokenizers/punkt')):
 # This will bypass SSL verification, which is necessary for some environments
 ssl._create_default_https_context = ssl._create_unverified_context
 
-# Load intents from the JSON file
-file_path = os.path.abspath("./intents.json")
-with open(file_path, "r") as file:  
-    intents = json.load(file)
+# URL to the intents.json file on GitHub
+url = "https://raw.githubusercontent.com/YourGitHubUsername/YourRepositoryName/main/intents.json"
+response = requests.get(url)
+if response.status_code == 200:
+    intents = response.json()
+else:
+    st.error(f"Failed to download intents.json: Status code {response.status_code}")
 
 vectorizer = TfidfVectorizer(ngram_range=(1, 4))
 clf = LogisticRegression(random_state=0, max_iter=10000)
@@ -46,12 +50,10 @@ clf.fit(x, y)
 def chatbot(input_text):
     input_text = vectorizer.transform([input_text])
     tag = clf.predict(input_text)[0]
-    
     for intent in intents:
         if intent['tag'] == tag:
             response = random.choice(intent['responses'])
             return response
-    
 
 counter = 0
 
@@ -85,9 +87,7 @@ Just type the name of any gadget—phones, laptops, TVs, or anything else—and 
         user_input = st.text_input("You:", key=f"user_input_{counter}")
 
         if user_input:
-
             user_input_str = str(user_input)
-
             response = chatbot(user_input)
             st.text_area("Chatbot:", value=response, height=120, max_chars=None, key=f"chatbot_response_{counter}")
 
