@@ -63,14 +63,16 @@ def main():
 
     if choice == "Home":
         st.write("""
-Welcome to GadgetBot! I'm your tech-savvy chatbot with a head full of knowledge about all things electronic gadgets. Need some quick info about your favorite devices? Just ask away!
+Welcome to MediBot! I'm your friendly health assistant chatbot with a head full of knowledge about medical topics and wellness. Need quick info about health conditions, medications, or healthy living tips? Just ask away!
 
 I can help you with details like:
 
-Features – What's this gadget's specialty?
-Specifications – What’s under the hood?
-Usage Tips – How can you make the most of it?
-Just type the name of any gadget—phones, laptops, TVs, or anything else—and I’ll handle the rest! Let’s get your tech know-how up to speed! """)
+Symptoms – What might this condition feel like?  
+Medications – What does this drug do and how is it used?  
+Health Tips – How can you improve your wellness daily?
+
+Just type the name of any disease, medicine, body part, or health topic—and I’ll handle the rest! Let’s get your health knowledge up to speed!
+""")
 
         if not os.path.exists('chat_log.csv'):
             with open('chat_log.csv', 'w', newline='', encoding='utf-8') as csvfile:
