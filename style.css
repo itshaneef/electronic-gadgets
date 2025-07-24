@@ -1,37 +1,42 @@
+/* Entire page background */
 body {
-    background: linear-gradient(120deg, #f0f8ff, #d1e8ff);
-    color: #333333;
+    background-color: #f4f8fc; /* Clean medical-blue tone */
     font-family: 'Segoe UI', sans-serif;
+    color: #333;
 }
 
-h1, h2, h3, h4 {
-    color: #003366;
+/* Title styling */
+h1 {
+    color: #004080; /* Deep professional blue */
 }
 
-.stTextInput > div > div > input {
+/* Input box styling */
+input, .stTextInput textarea, textarea {
     background-color: #ffffff;
-    border: 1px solid #0073e6;
-    border-radius: 5px;
+    border: 2px solid #a7c7e7;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
 }
 
-textarea {
-    background-color:#f3f4f6;
+/* Chat area */
+.stTextArea {
+    background-color: #f0f4ff !important;
     border-radius: 10px;
     padding: 10px;
+    color: #222;
 }
 
-.sidebar .sidebar-content {
-    background-color: #f0f4ff;
-    padding: 1rem;
+/* Side bar */
+.css-1d391kg { 
+    background-color: #ddeeff !important;
 }
 
-.stButton>button {
-    background-color: #0073e6;
-    color: white;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-.stButton>button:hover {
-    background-color: #005bb5;
+/* Chat bubble styling (optional) */
+.stChatMessage {
+    background-color: #ffffff;
+    border-left: 4px solid #007acc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
