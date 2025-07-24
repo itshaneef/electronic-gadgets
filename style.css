@@ -1,6 +1,6 @@
 /* Entire page background */
 body {
-    background-color: #004080; /* Clean medical-blue tone */
+    background-color:#e6f0ff; /* Clean medical-blue tone */
     font-family: 'Segoe UI', sans-serif;
     color: #333;
 }
@@ -29,7 +29,7 @@ input, .stTextInput textarea, textarea {
 
 /* Side bar */
 .css-1d391kg { 
-    background-color: #ddeeff !important;
+    background-color:#eafaf1 !important;
 }
 
 /* Chat bubble styling (optional) */
