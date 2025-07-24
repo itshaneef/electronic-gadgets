@@ -5,6 +5,13 @@ import csv
 import nltk
 import ssl
 import streamlit as st
+def load_css(file_name):
+    with open(file_name, "r") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# Call it in your app
+load_css("style.css")
+
 import random
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
