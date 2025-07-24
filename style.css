@@ -1,7 +1,8 @@
-/* Apply background to the entire main container */
+/* Right-side main content area */
 [data-testid="stAppViewContainer"] > .main {
-    background: linear-gradient(to bottom right, #dbeeff, #eaf6ff); /* Professional gradient */
-    padding: 20px;
+    background: linear-gradient(to right, #f2f9ff, #e0ecff); /* Soothing light blue gradient */
+    padding: 30px;
+    border-radius: 12px;
 }
 
 /* Title styling */
@@ -31,7 +32,7 @@ input, .stTextInput textarea, textarea {
     background: linear-gradient(to bottom, #e3fff0, #d0f0e8);
 }
 
-/* Optional chat bubble look */
+/* Optional chat bubble */
 .stChatMessage {
     background-color: #ffffff;
     border-left: 4px solid #007acc;
