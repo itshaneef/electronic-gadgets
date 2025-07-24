@@ -1,31 +1,37 @@
-/* Background for the entire page */
 body {
-    background-color: #e3f2fd;  /* Light blue background */
+    background: linear-gradient(120deg, #f0f8ff, #d1e8ff);
+    color: #333333;
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* Chatbox styling */
-.stChatMessage {
+h1, h2, h3, h4 {
+    color: #003366;
+}
+
+.stTextInput > div > div > input {
     background-color: #ffffff;
-    border: 1px solid #90caf9;
+    border: 1px solid #0073e6;
+    border-radius: 5px;
+}
+
+textarea {
+    background-color: #f9f9f9;
     border-radius: 10px;
     padding: 10px;
-    margin-bottom: 10px;
 }
 
-/* Input box styling */
-textarea {
-    background-color: #f0f8ff;
-    color: #000;
-    font-size: 16px;
+.sidebar .sidebar-content {
+    background-color: #f0f4ff;
+    padding: 1rem;
 }
 
-/* Title and header */
-h1 {
-    color: #1565c0;
+.stButton>button {
+    background-color: #0073e6;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
-/* Side menu background */
-.css-1d391kg {
-    background-color: #bbdefb !important;
+.stButton>button:hover {
+    background-color: #005bb5;
 }
