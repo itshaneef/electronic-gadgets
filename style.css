@@ -1,6 +1,6 @@
 /* Entire page background */
 body {
-    background-color:#e6f0ff; /* Clean medical-blue tone */
+    background: linear-gradient(to bottom right, #dbeeff, #eaf6ff); /* Soft gradient with blue tones */
     font-family: 'Segoe UI', sans-serif;
     color: #333;
 }
@@ -29,7 +29,7 @@ input, .stTextInput textarea, textarea {
 
 /* Side bar */
 .css-1d391kg { 
-    background-color:#eafaf1 !important;
+    background: linear-gradient(to bottom, #e3fff0, #d0f0e8) !important; /* Soft green gradient */
 }
 
 /* Chat bubble styling (optional) */
