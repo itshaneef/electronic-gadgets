@@ -1,13 +1,12 @@
-/* Entire page background */
-body {
-    background: linear-gradient(to bottom right, #dbeeff, #eaf6ff); /* Soft gradient with blue tones */
-    font-family: 'Segoe UI', sans-serif;
-    color: #333;
+/* Apply background to the entire main container */
+[data-testid="stAppViewContainer"] > .main {
+    background: linear-gradient(to bottom right, #dbeeff, #eaf6ff); /* Professional gradient */
+    padding: 20px;
 }
 
 /* Title styling */
 h1 {
-    color: #004080; /* Deep professional blue */
+    color: #004080;
 }
 
 /* Input box styling */
@@ -27,12 +26,12 @@ input, .stTextInput textarea, textarea {
     color: #222;
 }
 
-/* Side bar */
-.css-1d391kg { 
-    background: linear-gradient(to bottom, #e3fff0, #d0f0e8) !important; /* Soft green gradient */
+/* Sidebar background */
+[data-testid="stSidebar"] {
+    background: linear-gradient(to bottom, #e3fff0, #d0f0e8);
 }
 
-/* Chat bubble styling (optional) */
+/* Optional chat bubble look */
 .stChatMessage {
     background-color: #ffffff;
     border-left: 4px solid #007acc;
