@@ -1,214 +1,213 @@
 [
     {
-      "tag": "greeting",
-      "patterns": ["Hi", "Hello", "Hey", "How are you"],
-      "responses": ["Hello! How can I assist you with your gadget queries today?", "Hi there! What electronic device information do you need?", "Hey! How can I help you today with your gadgets?"]
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Hey", "How are you"],
+        "responses": [
+            "Hello! How can I assist you with your medicine queries today?",
+            "Hi there! What medicine information do you need?",
+            "Hey! How can I help you today?"
+        ]
     },
     {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye", "Take care"],
-      "responses": ["Goodbye! Take care of your gadgets!", "See you later! Enjoy your devices!", "Goodbye! Feel free to reach out if you have more gadget questions!"]
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye", "Take care"],
+        "responses": [
+            "Goodbye! Take care of your health!",
+            "See you later! Stay healthy!",
+            "Goodbye! Feel free to reach out if you have more questions!"
+        ]
     },
     {
-      "tag": "thanks",
-      "patterns": ["Thank you", "Thanks", "Thanks a lot", "I appreciate it"],
-      "responses": ["You're welcome! Stay tech-savvy!", "No problem! Glad I could help with your gadgets!", "You're welcome! Take care of your devices!"]
+        "tag": "thanks",
+        "patterns": ["Thank you", "Thanks", "Thanks a lot", "I appreciate it"],
+        "responses": [
+            "You're welcome! Stay healthy!",
+            "No problem! Glad I could help!",
+            "You're welcome! Take care!"
+        ]
     },
     {
-      "tag": "about",
-      "patterns": ["What can you do", "Who are you", "What are you", "What is your purpose"],
-      "responses": ["I am a gadget information assistant here to provide details about various electronic devices.", "My purpose is to assist you with information about gadgets, their features, specifications, and usage."]
+        "tag": "about",
+        "patterns": ["What can you do", "Who are you", "What are you", "What is your purpose"],
+        "responses": [
+            "I am a medicine information chatbot here to provide details about various medications.",
+            "My purpose is to assist you with information about medicines and their uses."
+        ]
     },
     {
-      "tag": "apple_iphone_features",
-      "patterns": ["What are the features of iPhone", "Tell me about iPhone features", "What does the iPhone offer", "List features of iPhone"],
-      "responses": [
-        "The iPhone features a high-quality Retina display, Face ID, powerful A-series chips, a range of camera capabilities, and a secure operating system (iOS). It also includes wireless charging, water resistance, and regular software updates.",
-        "Key features of the iPhone include a fast and secure A-series chip, Face ID, an advanced camera system, and deep integration with Apple's ecosystem, offering smooth performance and long-lasting battery life."
-      ]
+        "tag": "dolo_650_definition",
+        "patterns": ["Tell me about Dolo 650", "What is Dolo 650", "What is the composition of Dolo 650", "Explain Dolo 650"],
+        "responses": [
+            "Dolo 650 is a tablet containing 650 mg of Paracetamol (Acetaminophen). It is used to relieve pain and reduce fever.",
+            "It contains Paracetamol, which is both an analgesic (pain reliever) and antipyretic (fever reducer)."
+        ]
     },
     {
-      "tag": "apple_iphone_specifications",
-      "patterns": ["What are the specifications of iPhone", "Tell me the specifications of iPhone", "Give me iPhone specifications"],
-      "responses": [
-        "The specifications of the iPhone vary depending on the model. For example, the latest models have a Super Retina display, A17 Bionic chip, up to 1TB storage, and dual or triple camera systems depending on the version.",
-        "iPhone specifications include 5G support, up to 6GB of RAM, and a 12MP camera with advanced features like Portrait Mode and Night Mode. Storage options range from 64GB to 1TB."
-      ]
+        "tag": "dolo_650_usage",
+        "patterns": ["What is Dolo 650 used for", "When to use Dolo 650", "Who can use Dolo 650", "How is Dolo 650 used"],
+        "responses": [
+            "Dolo 650 is used to relieve headaches, toothaches, body aches, back pain, and fever caused by colds or flu.",
+            "It is suitable for short-term pain relief and fever management in adults and children above a certain age, as advised by a doctor."
+        ]
     },
     {
-      "tag": "apple_iphone_usage_tips",
-      "patterns": ["How to use iPhone effectively", "Tips for using iPhone", "Best practices for iPhone"],
-      "responses": [
-        "To get the most out of your iPhone, enable iCloud for automatic backups, use gestures for efficient navigation, and keep your apps updated for better performance. You can also use Screen Time to manage app usage and reduce distractions.",
-        "Make sure to adjust your iPhone settings for optimal battery life. Turning off unnecessary features like background app refresh and location services can help conserve energy. You can also use Focus modes for better productivity."
-      ]
+        "tag": "dolo_650_side_effects",
+        "patterns": ["What are the side effects of Dolo 650", "Dolo 650 side effects", "Are there any side effects of Dolo 650"],
+        "responses": [
+            "Common side effects include nausea, vomiting, stomach upset, and dizziness.",
+            "Excessive use can lead to serious liver damage. Seek medical attention for symptoms like dark urine, yellowing of the skin, or severe abdominal pain."
+        ]
     },
     {
-      "tag": "samsung_galaxy_features",
-      "patterns": ["What are the features of Samsung Galaxy", "Tell me about Samsung Galaxy features", "What does the Samsung Galaxy offer", "List features of Samsung Galaxy"],
-      "responses": [
-        "The Samsung Galaxy features AMOLED displays, high-resolution cameras, expandable storage, and powerful processors. It also includes wireless charging, an in-display fingerprint scanner, and Samsung's custom One UI interface.",
-        "Key features of Samsung Galaxy include a high refresh rate display, powerful Exynos/Snapdragon processors, expandable storage (on certain models), and camera systems that support 4K video recording and night mode."
-      ]
+        "tag": "paracetamol_definition",
+        "patterns": ["Tell me about Paracetamol", "What is Paracetamol", "What is the composition of Paracetamol", "Explain Paracetamol"],
+        "responses": [
+            "Paracetamol, also known as Acetaminophen, is a widely used over-the-counter pain reliever and fever reducer.",
+            "It works by inhibiting chemicals in the brain responsible for pain and fever."
+        ]
     },
     {
-      "tag": "samsung_galaxy_specifications",
-      "patterns": ["What are the specifications of Samsung Galaxy", "Tell me the specifications of Samsung Galaxy", "Give me Samsung Galaxy specifications"],
-      "responses": [
-        "Samsung Galaxy smartphones come in different configurations. The latest models offer up to 12GB RAM, Snapdragon or Exynos chipsets, 5G support, and screen sizes ranging from 6.1 inches to 6.9 inches depending on the model.",
-        "Specifications include Super AMOLED or Dynamic AMOLED displays, 108MP cameras on some models, up to 1TB storage, and fast charging features. Battery capacities range from 4000mAh to 5000mAh."
-      ]
+        "tag": "paracetamol_usage",
+        "patterns": ["What is Paracetamol used for", "When to use Paracetamol", "Who can use Paracetamol", "How is Paracetamol used"],
+        "responses": [
+            "Paracetamol is used for treating mild to moderate pain, such as headaches, toothaches, and fever.",
+            "It is commonly used by both adults and children for fever and pain relief. Always follow dosage instructions."
+        ]
     },
     {
-      "tag": "samsung_galaxy_usage_tips",
-      "patterns": ["How to use Samsung Galaxy effectively", "Tips for using Samsung Galaxy", "Best practices for Samsung Galaxy"],
-      "responses": [
-        "To make the most of your Samsung Galaxy, use the split-screen feature for multitasking, customize the always-on display, and enable Samsung DeX for a desktop-like experience. Also, make use of the camera's advanced modes for better photos.",
-        "Ensure your Samsung Galaxy runs smoothly by keeping your software up to date, managing battery usage with the device care tool, and using One UI features like dark mode to save battery."
-      ]
+        "tag": "paracetamol_side_effects",
+        "patterns": ["What are the side effects of Paracetamol", "Paracetamol side effects", "Are there any side effects of Paracetamol"],
+        "responses": [
+            "Side effects are rare but may include nausea and allergic reactions like rashes.",
+            "Overdose can lead to liver damage. Seek immediate help if you notice yellowing of the skin or eyes, or severe abdominal pain."
+        ]
     },
     {
-      "tag": "dell_xps_features",
-      "patterns": ["What are the features of Dell XPS", "Tell me about Dell XPS features", "What does the Dell XPS offer", "List features of Dell XPS"],
-      "responses": [
-        "Dell XPS laptops are known for their premium build quality, thin bezels, and powerful performance. They feature high-resolution InfinityEdge displays, long battery life, and high-performance Intel or AMD processors.",
-        "Key features of the Dell XPS include a high-resolution 4K or Full HD screen, Intel Core processors, premium aluminum and carbon fiber build, and an ultra-thin design."
-      ]
+        "tag": "paracetamol_dosage",
+        "patterns": ["What is the dosage of Paracetamol", "How much Paracetamol should I take", "Paracetamol dosage", "How to take Paracetamol"],
+        "responses": [
+            "The typical adult dose is 500 mg to 1000 mg every 4 to 6 hours, not exceeding 4000 mg per day.",
+            "Children's dosage depends on age and weight. Consult a doctor for pediatric use."
+        ]
     },
     {
-      "tag": "dell_xps_specifications",
-      "patterns": ["What are the specifications of Dell XPS", "Tell me the specifications of Dell XPS", "Give me Dell XPS specifications"],
-      "responses": [
-        "The Dell XPS series comes with options for up to 32GB of RAM, 1TB of SSD storage, Intel i5, i7, or i9 processors, and graphics cards from Intel or Nvidia, depending on the model.",
-        "Dell XPS specifications may include 13-inch, 15-inch, or 17-inch displays with 4K options, Intel Core processors, and up to 16GB of RAM with NVIDIA GeForce GTX or MX graphics in certain models."
-      ]
+        "tag": "ibuprofen_definition",
+        "patterns": ["Tell me about Ibuprofen", "What is Ibuprofen", "What is the composition of Ibuprofen", "Explain Ibuprofen"],
+        "responses": [
+            "Ibuprofen is a nonsteroidal anti-inflammatory drug (NSAID) used to relieve pain, reduce fever, and decrease inflammation.",
+            "It works by blocking enzymes responsible for inflammation and pain."
+        ]
     },
     {
-      "tag": "dell_xps_usage_tips",
-      "patterns": ["How to use Dell XPS effectively", "Tips for using Dell XPS", "Best practices for Dell XPS"],
-      "responses": [
-        "To optimize your Dell XPS, use the Dell Power Manager to control your battery settings and adjust performance. Enable Windows Hello for fast and secure login, and make sure to keep your drivers updated.",
-        "Keep your Dell XPS running smoothly by regularly cleaning the fan vents to prevent overheating, and use the built-in Dell SupportAssist tool for diagnostics and updates."
-      ]
+        "tag": "ibuprofen_usage",
+        "patterns": ["What is Ibuprofen used for", "When to use Ibuprofen", "Who can use Ibuprofen", "How is Ibuprofen used"],
+        "responses": [
+            "Ibuprofen is used for conditions like arthritis, menstrual cramps, muscle pain, and fever.",
+            "It is effective for short-term relief of pain and inflammation."
+        ]
     },
     {
-      "tag": "hp_spectre_features",
-      "patterns": ["What are the features of HP Spectre", "Tell me about HP Spectre features", "What does the HP Spectre offer", "List features of HP Spectre"],
-      "responses": [
-        "HP Spectre laptops are known for their sleek design, powerful performance, and premium build. They come with high-resolution displays, long battery life, and fast charging features.",
-        "Key features of HP Spectre include ultra-thin and lightweight design, Intel Core processors, OLED display options, and a long-lasting battery. They also offer Bang & Olufsen audio for excellent sound quality."
-      ]
+        "tag": "ibuprofen_side_effects",
+        "patterns": ["What are the side effects of Ibuprofen", "Ibuprofen side effects", "Are there any side effects of Ibuprofen"],
+        "responses": [
+            "Common side effects include nausea, stomach pain, and dizziness.",
+            "Serious side effects can include gastrointestinal bleeding, kidney damage, and allergic reactions. Take it with food and follow dosage instructions carefully."
+        ]
     },
     {
-      "tag": "hp_spectre_specifications",
-      "patterns": ["What are the specifications of HP Spectre", "Tell me the specifications of HP Spectre", "Give me HP Spectre specifications"],
-      "responses": [
-        "HP Spectre laptops come with up to 16GB of RAM, Intel i5 or i7 processors, and SSD storage options up to 1TB. Some models feature OLED displays and Intel Iris Plus or dedicated graphics cards.",
-        "Specifications include 13-inch to 15-inch displays, Intel Core processors, up to 16GB of RAM, and up to 1TB of SSD storage. Battery life ranges from 8 to 12 hours, depending on usage."
-      ]
+        "tag": "ibuprofen_dosage",
+        "patterns": ["What is the dosage of Ibuprofen", "How much Ibuprofen should I take", "Ibuprofen dosage", "How to take Ibuprofen"],
+        "responses": [
+            "The usual adult dose is 200–400 mg every 4–6 hours as needed. Do not exceed 1200 mg/day without medical supervision.",
+            "Children’s dosage is based on weight and age. Consult a healthcare provider before use."
+        ]
     },
     {
-      "tag": "hp_spectre_usage_tips",
-      "patterns": ["How to use HP Spectre effectively", "Tips for using HP Spectre", "Best practices for HP Spectre"],
-      "responses": [
-        "To get the best performance from your HP Spectre, enable power-saving modes for battery conservation, use the HP Command Center to manage performance, and update the BIOS and drivers regularly for smooth functioning.",
-        "Make sure to keep your HP Spectre cool by avoiding blocking ventilation ports, and use the HP QuickDrop app for seamless file transfer between devices."
-      ]
+        "tag": "amoxicillin_definition",
+        "patterns": ["Tell me about Amoxicillin", "What is Amoxicillin", "What is the composition of Amoxicillin", "Explain Amoxicillin"],
+        "responses": [
+            "Amoxicillin is a penicillin-type antibiotic used to treat various bacterial infections like pneumonia and bronchitis.",
+            "It works by preventing the growth of bacteria by disrupting their cell wall."
+        ]
     },
     {
-      "tag": "sony_bravia_features",
-      "patterns": ["What are the features of Sony Bravia", "Tell me about Sony Bravia features", "What does Sony Bravia offer", "List features of Sony Bravia"],
-      "responses": [
-        "Sony Bravia TVs offer exceptional picture quality with 4K HDR, Dolby Vision, and enhanced color technology. They also support smart TV features like Google Assistant and various streaming services.",
-        "Key features of Sony Bravia include LED and OLED displays, 4K resolution, high dynamic range (HDR), and powerful sound systems with Dolby Atmos for an immersive viewing experience."
-      ]
+        "tag": "amoxicillin_usage",
+        "patterns": ["What is Amoxicillin used for", "When to use Amoxicillin", "Who can use Amoxicillin", "How is Amoxicillin used"],
+        "responses": [
+            "Amoxicillin is used to treat infections of the ear, throat, lungs, urinary tract, and skin.",
+            "It must be taken as prescribed, and the full course should be completed even if symptoms improve."
+        ]
     },
     {
-      "tag": "sony_bravia_specifications",
-      "patterns": ["What are the specifications of Sony Bravia", "Tell me the specifications of Sony Bravia", "Give me Sony Bravia specifications"],
-      "responses": [
-        "Sony Bravia TVs feature up to 8K resolution in some models, OLED or LED display technology, Google TV with built-in Chromecast, and a variety of screen sizes from 43 inches to over 80 inches.",
-        "Specifications include 4K or 8K resolution, HDMI 2.1 support, Android TV OS, Dolby Vision HDR, and up to 120Hz refresh rate for smooth motion handling."
-      ]
+        "tag": "amoxicillin_side_effects",
+        "patterns": ["What are the side effects of Amoxicillin", "Amoxicillin side effects", "Are there any side effects of Amoxicillin"],
+        "responses": [
+            "Common side effects include nausea, vomiting, diarrhea, and skin rash.",
+            "Serious reactions include allergic responses like swelling or breathing difficulty. Seek medical attention if these occur."
+        ]
     },
     {
-      "tag": "sony_bravia_usage_tips",
-      "patterns": ["How to use Sony Bravia effectively", "Tips for using Sony Bravia", "Best practices for Sony Bravia"],
-      "responses": [
-        "To get the most from your Sony Bravia, calibrate the picture settings for your viewing environment, enable Game Mode for smoother gaming experiences, and use voice commands via Google Assistant for hands-free control.",
-        "Make sure to connect your Sony Bravia to a stable internet connection for seamless streaming and download updates regularly to ensure you're using the latest features."
-      ]
+        "tag": "amoxicillin_dosage",
+        "patterns": ["What is the dosage of Amoxicillin", "How much Amoxicillin should I take", "Amoxicillin dosage", "How to take Amoxicillin"],
+        "responses": [
+            "Typical adult dose is 250–500 mg every 8 hours, or 500–875 mg every 12 hours, depending on the infection.",
+            "Children’s dosage depends on age and weight. Follow your doctor's instructions strictly."
+        ]
     },
     {
-      "tag": "lg_oled_features",
-      "patterns": ["What are the features of LG OLED", "Tell me about LG OLED features", "What does LG OLED offer", "List features of LG OLED"],
-      "responses": [
-        "LG OLED TVs feature self-lighting OLED pixels that deliver perfect black levels and infinite contrast. They also support 4K resolution, Dolby Vision, and Dolby Atmos for immersive sound and picture quality.",
-        "Key features of LG OLED include exceptional color accuracy, ultra-thin design, webOS smart TV platform, and support for HDMI 2.1 for next-gen gaming."
-      ]
+        "tag": "azithromycin_definition",
+        "patterns": ["Tell me about Azithromycin", "What is Azithromycin", "What is the composition of Azithromycin", "Explain Azithromycin"],
+        "responses": [
+            "Azithromycin is a macrolide antibiotic used to treat a variety of bacterial infections including respiratory, skin, and ear infections.",
+            "It works by stopping bacterial growth through inhibition of protein synthesis."
+        ]
     },
     {
-      "tag": "lg_oled_specifications",
-      "patterns": ["What are the specifications of LG OLED", "Tell me the specifications of LG OLED", "Give me LG OLED specifications"],
-      "responses": [
-        "LG OLED TVs offer 4K resolution with self-lighting OLED pixels, support for Dolby Vision and HDR10+, and come in sizes ranging from 48 inches to 83 inches. They also feature a refresh rate up to 120Hz.",
-        "Specifications include OLED display technology, a1 or α9 Gen 5 AI Processor, webOS smart platform, Dolby Atmos sound, and HDMI 2.1 ports for high-quality gaming experiences."
-      ]
+        "tag": "azithromycin_usage",
+        "patterns": ["What is Azithromycin used for", "When to use Azithromycin", "Who can use Azithromycin", "How is Azithromycin used"],
+        "responses": [
+            "Azithromycin is used for infections like pneumonia, bronchitis, sinusitis, and some sexually transmitted infections.",
+            "It is effective for bacterial infections and should be used only as prescribed by a doctor."
+        ]
     },
     {
-      "tag": "lg_oled_usage_tips",
-      "patterns": ["How to use LG OLED effectively", "Tips for using LG OLED", "Best practices for LG OLED"],
-      "responses": [
-        "To optimize your LG OLED, use the OLED Motion Pro for smoother action in fast-paced content, adjust the picture settings for your lighting environment, and activate Game Mode for low latency gaming.",
-        "Ensure your LG OLED is running on the latest software by checking for updates regularly, and use the Magic Remote for easy navigation and voice control."
-      ]
+        "tag": "azithromycin_side_effects",
+        "patterns": ["What are the side effects of Azithromycin", "Azithromycin side effects", "Are there any side effects of Azithromycin"],
+        "responses": [
+            "Common side effects include nausea, diarrhea, abdominal pain, and headache.",
+            "Serious side effects include allergic reactions and severe diarrhea caused by C. difficile. Seek medical help if severe symptoms occur."
+        ]
     },
     {
-      "tag": "lenovo_thinkpad_features",
-      "patterns": ["What are the features of Lenovo ThinkPad", "Tell me about Lenovo ThinkPad features", "What does Lenovo ThinkPad offer", "List features of Lenovo ThinkPad"],
-      "responses": [
-        "Lenovo ThinkPad laptops are known for their durability, long battery life, and excellent keyboards. They feature high-performance Intel or AMD processors, robust security features, and high-quality displays.",
-        "Key features of Lenovo ThinkPad include military-grade durability, fast processors, multiple port options, and ergonomic keyboards for comfortable typing."
-      ]
+        "tag": "azithromycin_dosage",
+        "patterns": ["What is the dosage of Azithromycin", "How much Azithromycin should I take", "Azithromycin dosage", "How to take Azithromycin"],
+        "responses": [
+            "Typical adult dosage is 500 mg on the first day, followed by 250 mg once daily for the next 4 days.",
+            "Dosage may vary depending on the condition. Always follow your doctor’s instructions."
+        ]
     },
     {
-      "tag": "lenovo_thinkpad_specifications",
-      "patterns": ["What are the specifications of Lenovo ThinkPad", "Tell me the specifications of Lenovo ThinkPad", "Give me Lenovo ThinkPad specifications"],
-      "responses": [
-        "Lenovo ThinkPad laptops offer a range of configurations with Intel Core i5, i7, or i9 processors, up to 64GB of RAM, and storage options including 512GB SSD and 1TB SSD. They also feature 1080p or 4K displays.",
-        "Specifications include Intel or AMD processors, up to 64GB RAM, 1TB SSD storage, and up to 15.6-inch screen size. ThinkPad models also support Wi-Fi 6 and optional discrete graphics cards."
-      ]
+        "tag": "alerid_definition",
+        "patterns": ["Tell me about Alerid", "What is Alerid", "What is the composition of Alerid", "Explain Alerid"],
+        "responses": [
+            "Alerid is a brand name for Cetirizine, an antihistamine used to treat allergy symptoms.",
+            "It works by blocking histamine, a substance that causes allergic reactions in the body."
+        ]
     },
     {
-      "tag": "lenovo_thinkpad_usage_tips",
-      "patterns": ["How to use Lenovo ThinkPad effectively", "Tips for using Lenovo ThinkPad", "Best practices for Lenovo ThinkPad"],
-      "responses": [
-        "To get the most out of your Lenovo ThinkPad, use the Lenovo Vantage app to manage system updates and power settings. For better productivity, take advantage of the trackpad gestures and keyboard shortcuts.",
-        "For longer battery life, enable Lenovo’s Power Manager and adjust screen brightness. Keep your ThinkPad cool by avoiding placing it on soft surfaces, and regularly clean the keyboard and screen."
-      ]
+        "tag": "alerid_usage",
+        "patterns": ["What is Alerid used for", "When to use Alerid", "Who can use Alerid", "How is Alerid used"],
+        "responses": [
+            "Alerid is used to relieve symptoms of hay fever, allergies, and hives.",
+            "It can be used by adults and children over the age of 6, as directed by a doctor."
+        ]
     },
     {
-      "tag": "asus_rog_features",
-      "patterns": ["What are the features of Asus ROG", "Tell me about Asus ROG features", "What does Asus ROG offer", "List features of Asus ROG"],
-      "responses": [
-        "Asus ROG laptops are designed for gamers, featuring high-refresh-rate screens, powerful GPUs, RGB lighting, and custom cooling systems for optimal gaming performance.",
-        "Key features of Asus ROG include powerful Nvidia graphics cards, fast Intel or AMD processors, high-refresh-rate displays (up to 300Hz), and customizable RGB lighting for a gaming aesthetic."
-      ]
-    },
-    {
-      "tag": "asus_rog_specifications",
-      "patterns": ["What are the specifications of Asus ROG", "Tell me the specifications of Asus ROG", "Give me Asus ROG specifications"],
-      "responses": [
-        "Asus ROG laptops offer configurations with up to Intel Core i9 or AMD Ryzen 9 processors, Nvidia RTX 3080 or 4090 GPUs, and up to 64GB of RAM. Display options include 144Hz to 300Hz refresh rates with Full HD or 4K resolutions.",
-        "Specifications include Intel Core or AMD Ryzen processors, up to 64GB RAM, Nvidia RTX graphics, 15-inch to 17-inch displays with 144Hz to 300Hz refresh rates, and storage options up to 1TB SSD."
-      ]
-    },
-    {
-      "tag": "asus_rog_usage_tips",
-      "patterns": ["How to use Asus ROG effectively", "Tips for using Asus ROG", "Best practices for Asus ROG"],
-      "responses": [
-        "To maximize your gaming experience with Asus ROG, enable Performance Mode for high CPU and GPU performance, use the Armoury Crate software for customizing lighting and cooling settings, and keep your drivers updated for the best compatibility.",
-        "Ensure your Asus ROG stays cool during extended gaming sessions by using a cooling pad, and for better battery life, adjust the power settings to balance performance and energy consumption."
-      ]
+        "tag": "alerid_side_effects",
+        "patterns": ["What are the side effects of Alerid", "Alerid side effects", "Are there any side effects of Alerid"],
+        "responses": [
+            "Common side effects include drowsiness, headache, dry mouth, and dizziness.",
+            "Serious allergic reactions are rare but may include swelling, rash, and difficulty breathing."
+        ]
     }
 ]
