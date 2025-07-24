@@ -1,0 +1,31 @@
+/* Background for the entire page */
+body {
+    background-color: #e3f2fd;  /* Light blue background */
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Chatbox styling */
+.stChatMessage {
+    background-color: #ffffff;
+    border: 1px solid #90caf9;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Input box styling */
+textarea {
+    background-color: #f0f8ff;
+    color: #000;
+    font-size: 16px;
+}
+
+/* Title and header */
+h1 {
+    color: #1565c0;
+}
+
+/* Side menu background */
+.css-1d391kg {
+    background-color: #bbdefb !important;
+}
